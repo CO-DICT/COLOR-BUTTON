@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="INDEX.CSS">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		
+		button
+    {
+		background-color: grey; /* Green */
+ 
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+		border-radius: 25px;
+        
+    }
+				</style>
+	</head>
+
+
+<body>
+<!--Let us create a simple menu using the navigation tags-->
+<!--Use header to indicate that manu will be a part of header -->
+<header>
+	
+	
+		<content>
+		
+		
+		  <button style="background-color:red;font-size: 20px;text-align: center;margin-left: 40%;
+						 margin-top: 9%;" id="redBtn">Red</button>
+    <button style="background-color:green;font-size: 20px;text-align: center;
+						 margin-top: 9%;" id="greenBtn">Green</button>
+    <button style="background-color:yellow;font-size: 20px;text-align: center;
+						 margin-top: 9%;" id="yellowBtn">Yellow</button>
+
+    <br><br/>
+   
+
+    <script>	
+        const redBtn = document.getElementById('redBtn');
+        const yellowBtn = document.getElementById('yellowBtn');
+        const greenBtn = document.getElementById('greenBtn');
+
+        redBtn.addEventListener('click', function onClick() 
+								{
+            redBtn.style.backgroundColor = 'red';
+            yellowBtn.style.backgroundColor = 'red';
+            greenBtn.style.backgroundColor = 'red';
+        }
+							   );
+
+        yellowBtn.addEventListener('click', function onClick() {
+            redBtn.style.backgroundColor = 'yellow';
+            yellowBtn.style.backgroundColor = 'yellow';
+            greenBtn.style.backgroundColor = 'yellow';
+        });
+
+        greenBtn.addEventListener('click', function onClick() {
+            redBtn.style.backgroundColor = 'green';
+            yellowBtn.style.backgroundColor = 'green';
+            greenBtn.style.backgroundColor = 'green';
+        });
+
+    </script>
+		</content>
+			
+</header>
+	<footer class="footer">
+    <div class="footerContainer">
+        <p class="copyright">© NITESH KUMAR</p>
+    </div>
+</footer>
+</body>
+</html>
+
+
